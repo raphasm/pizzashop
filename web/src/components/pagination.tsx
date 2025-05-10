@@ -35,6 +35,7 @@ export default function Pagination({
           <Button
             onClick={() => onPageChange(0)}
             variant="outline"
+            size="xs"
             className="h-8 w-8 p-0"
             disabled={pageIndex === 0}
           >
@@ -45,6 +46,7 @@ export default function Pagination({
             onClick={() => onPageChange(pageIndex - 1)}
             variant="outline"
             className="h-8 w-8 p-0"
+            size="xs"
             disabled={pageIndex === 0}
           >
             <ChevronLeft className="h-4 w-4" />
@@ -54,6 +56,7 @@ export default function Pagination({
             onClick={() => onPageChange(pageIndex + 1)}
             variant="outline"
             className="h-8 w-8 p-0"
+            size="xs"
             disabled={pages <= pageIndex + 1}
           >
             <ChevronRight className="h-4 w-4" />
@@ -63,6 +66,7 @@ export default function Pagination({
             onClick={() => onPageChange(pages - 1)}
             variant="outline"
             className="h-8 w-8 p-0"
+            size="xs"
             disabled={pages <= pageIndex + 1}
           >
             <ChevronsRight className="h-4 w-4" />
